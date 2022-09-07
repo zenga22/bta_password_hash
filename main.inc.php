@@ -5,7 +5,7 @@ Version: 1.0.0
 Description: Replace the default password hashing functions with PHP native functions.
 Plugin URI: http://piwigo.org
 Author: zenga11
-Author URI: https://businesstechnologyassociates.com
+Author URI: https://github.com/zenga22/bta_password_hash
 */
 
 defined('PHPWG_ROOT_PATH') or die('Hacking attempt!');
