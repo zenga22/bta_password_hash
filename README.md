@@ -11,4 +11,6 @@ Download plugin code and copy to Piwigo's plugin directory in the **bta_password
 ## Details
 Hashes a password with the PHP *password_hash* function. 
 Verifies a password, with the PHP *pass_verify* function.
- If the hash is 'old' (assumed MD5) or Piwigo hashing ($P$) the hash is updated in database using the Blowfish cipher [(bcrypt)](https://en.wikipedia.org/wiki/Bcrypt) algorithm with hashes prefixed with "$2y$".
+ If the hash is 'old' (assumed MD5) or Piwigo phpass hashing ($P$) the hash is updated in database using the Blowfish cipher [(bcrypt)](https://en.wikipedia.org/wiki/Bcrypt) algorithm with hashes prefixed with "$2y$".
+ 
+ If the database is restored from a backup before using this plugin, the old hashes will still function and be replaced as users log-in.
